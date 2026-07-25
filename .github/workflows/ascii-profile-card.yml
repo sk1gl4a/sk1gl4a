@@ -19,9 +19,9 @@ jobs:
   card:
     runs-on: ubuntu-latest
     steps:
-      - uses: hu553in/ascii-profile-card@v1
+      # pinned to v1.1.1
+      - uses: hu553in/ascii-profile-card@b2406be1224dc8f5624f890ef6f91514f0f478ab
         with:
-          token: ${{ secrets.CARD_TOKEN || github.token }}
           config: |
             login: sk1gl4a
             uptimeStart: 2020-10-14
@@ -42,20 +42,17 @@ jobs:
               lowercase: false
               lines:
                 - { type: header, text: 'sk1gl4a' }
-                - { type: kv, key: Role, value: 'CS student, Hannover DE' }
+                - { type: kv, key: Role, value: 'Informatik student' }
+                - { type: kv, key: Uni, value: 'Leibniz Universität Hannover' }
+                - { type: kv, key: Location, value: 'Hannover, DE' }
                 - { type: kv, key: Uptime, value: '{uptime} on GitHub' }
                 - { type: blank }
                 - { type: kv, key: Stack, value: 'Swift, TypeScript, Python, Java' }
                 - { type: kv, key: Building, value: 'native macOS apps, CLI tooling' }
-                - { type: kv, key: Into, value: 'automation, agents, systems that just run' }
+                - { type: kv, key: Currently, value: 'SwiftUI, agentic tooling, automation' }
                 - { type: blank }
-                - { type: section, title: GitHub stats }
-                - { type: kv, key: Repos, value: '{repos} (contributed to {contributedRepos})' }
-                - { type: kv, key: Stars, value: '{stars}' }
-                - { type: kv, key: Followers, value: '{followers}' }
-                - { type: kv, key: Contributions, value: '{contributions} (all time)' }
-                - { type: kv, key: Lines of code, value: '{loc} ({locAdded}, {locDeleted})' }
-                - { type: kv, key: Top languages, value: '{topLanguages}' }
+                - { type: section, title: Contact }
+                - { type: kv, key: Site, value: 'sk1gl4a.dev' }
 
             layout:
               charWidthPx: 9.9
@@ -66,7 +63,7 @@ jobs:
               paddingPx: 16
               rowHeightPx: 20
               ruleWidth: 56
-              valueColumn: 20
+              valueColumn: 18
 
             output:
               dark: dark_mode.svg
