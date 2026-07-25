@@ -47,7 +47,7 @@ jobs:
                 - { type: kv, key: Location, value: 'Hannover, DE' }
                 - { type: kv, key: Uptime, value: '{uptime} on GitHub' }
                 - { type: blank }
-                - { type: kv, key: Stack, value: 'Swift, TypeScript, Python, Java' }
+                - { type: kv, key: Stack, value: 'C#, Java, C, Swift' }
                 - { type: kv, key: Building, value: 'native macOS apps, CLI tooling' }
                 - { type: kv, key: Currently, value: 'SwiftUI, agentic tooling, automation' }
                 - { type: blank }
