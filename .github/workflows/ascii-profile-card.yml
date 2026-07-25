@@ -67,7 +67,7 @@ jobs:
 
             themes:
               dark:
-                background: '#161b22'
+                background: '#0d1117'
                 text: '#c9d1d9'
                 key: '#ffa657'
                 value: '#a5d6ff'
@@ -75,7 +75,7 @@ jobs:
                 added: '#3fb950'
                 deleted: '#f85149'
               light:
-                background: '#f6f8fa'
+                background: '#ffffff'
                 text: '#24292f'
                 key: '#953800'
                 value: '#0a3069'
