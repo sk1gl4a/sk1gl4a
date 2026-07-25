@@ -33,7 +33,7 @@ SEED_SALT = "sk1gl4a"
 
 # --- art parameters ----------------------------------------------------------
 
-COLUMNS = 42
+COLUMNS = 36
 ROWS = 24
 SCALE = 1.5
 WARP = 3.6
@@ -48,8 +48,10 @@ FONT_SIZE = 16
 ROW_HEIGHT = 20
 PADDING = 16
 # braille glyph width varies with the viewer's fallback font, so the left
-# column gets a generous reservation instead of an exact measurement
-ART_CELL = 15.0
+# column reserves a bit more than the 0.6em a monospace glyph normally takes.
+# Keep the total canvas near 950px: GitHub scales the card down to the README
+# column width, so a wider canvas just makes the text smaller on screen.
+ART_CELL = 12.0
 INFO_CELL = 9.9
 GAP = 24
 
@@ -231,10 +233,10 @@ def build_svg(today: dt.date, theme_name: str) -> str:
     info_x = PADDING + COLUMNS * ART_CELL + GAP
     rows = info_rows(today)
     info_width = max(
-        len(" ".join(part for part in payload)) if kind == "kv" else 52
-        for kind, payload in rows
+        (len(" ".join(payload)) for kind, payload in rows if kind == "kv"),
+        default=len(HEADER),
     )
-    width = round(info_x + max(info_width, 52) * INFO_CELL + PADDING)
+    width = round(info_x + info_width * INFO_CELL + PADDING)
     height = PADDING * 2 + ROWS * ROW_HEIGHT
 
     parts = [
@@ -264,7 +266,7 @@ def build_svg(today: dt.date, theme_name: str) -> str:
     for index, (kind, payload) in enumerate(rows):
         y = PADDING + (index + 1) * ROW_HEIGHT - 6
         if kind == "header":
-            rule = "─" * 44
+            rule = "─" * max(0, info_width - len(payload[0]) - 1)
             parts.append(
                 f'<tspan x="{info_x}" y="{y}">{html.escape(payload[0])} '
                 f'<tspan fill="{theme["dots"]}">{rule}</tspan></tspan>'
