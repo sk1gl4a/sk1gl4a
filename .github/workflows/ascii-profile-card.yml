@@ -1,0 +1,91 @@
+name: ASCII profile card
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ascii-profile-card
+  cancel-in-progress: true
+
+jobs:
+  card:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hu553in/ascii-profile-card@v1
+        with:
+          token: ${{ secrets.CARD_TOKEN || github.token }}
+          config: |
+            login: sk1gl4a
+            uptimeStart: 2020-10-14
+
+            art:
+              seed: daily
+              width: 420
+              columns: 42
+              rows: 24
+              scale: 2.4
+              warp: 2.4
+              bands: 3.4
+              contrast: 2.6
+              octaves: 4
+
+            card:
+              align: left
+              lowercase: false
+              lines:
+                - { type: header, text: 'sk1gl4a' }
+                - { type: kv, key: Role, value: 'CS student, Hannover DE' }
+                - { type: kv, key: Uptime, value: '{uptime} on GitHub' }
+                - { type: blank }
+                - { type: kv, key: Stack, value: 'Swift, TypeScript, Python, Java' }
+                - { type: kv, key: Building, value: 'native macOS apps, CLI tooling' }
+                - { type: kv, key: Into, value: 'automation, agents, systems that just run' }
+                - { type: blank }
+                - { type: section, title: GitHub stats }
+                - { type: kv, key: Repos, value: '{repos} (contributed to {contributedRepos})' }
+                - { type: kv, key: Stars, value: '{stars}' }
+                - { type: kv, key: Followers, value: '{followers}' }
+                - { type: kv, key: Contributions, value: '{contributions} (all time)' }
+                - { type: kv, key: Lines of code, value: '{loc} ({locAdded}, {locDeleted})' }
+                - { type: kv, key: Top languages, value: '{topLanguages}' }
+
+            layout:
+              charWidthPx: 9.9
+              columnGapPx: 24
+              cornerRadiusPx: 15
+              fontFamily: "'JetBrains Mono', 'Cascadia Code', Consolas, monospace"
+              fontSizePx: 16
+              paddingPx: 16
+              rowHeightPx: 20
+              ruleWidth: 56
+              valueColumn: 20
+
+            output:
+              dark: dark_mode.svg
+              light: light_mode.svg
+
+            themes:
+              dark:
+                background: '#161b22'
+                text: '#c9d1d9'
+                key: '#ffa657'
+                value: '#a5d6ff'
+                dots: '#616e7f'
+                added: '#3fb950'
+                deleted: '#f85149'
+              light:
+                background: '#f6f8fa'
+                text: '#24292f'
+                key: '#953800'
+                value: '#0a3069'
+                dots: '#9ba3ae'
+                added: '#1a7f37'
+                deleted: '#cf222e'
