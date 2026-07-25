@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="987px" height="512px" font-family="'JetBrains Mono','DejaVu Sans Mono',monospace" font-size="16px">
+<rect width="987px" height="512px" fill="#0d1117" rx="15"/>
+<text fill="#c9d1d9" xml:space="preserve">
+<tspan x="16" y="30">▒░░▒▓██▓    ░        ░▒▒░    ░███    ▓█▓▓ </tspan>
+<tspan x="16" y="50">▒▒▓██▓░░    ░ ░░           ░▒▒▒██    █░▓▒░</tspan>
+<tspan x="16" y="70">█▓▓█▓  ░     ░▒▒           █░▓█▓     ▓████</tspan>
+<tspan x="16" y="90">▓▓██▓░       ░▒           ▒██▓ ░     ░░   </tspan>
+<tspan x="16" y="110">▒▓█▓▓░       ▒       ▒   ▒███▓░░       ░  </tspan>
+<tspan x="16" y="130">█▓▓██▓      ▒       ░▒▒░ ░█▓▓████    ░░░░░</tspan>
+<tspan x="16" y="150">█████▒                         ░██▓  ▓▓▒▒░</tspan>
+<tspan x="16" y="170">███▓░          ▒█▓▓░        ░░░  ▓█  ▒█▓▓▒</tspan>
+<tspan x="16" y="190">▒▓    ░       ███████░      ▒▒█▒ ░█░  ▒▓▒▓</tspan>
+<tspan x="16" y="210">              ▓██▓▓█████▓▒▒█████▒ ░    ░░░</tspan>
+<tspan x="16" y="230">             ▒██▒▒▒▒▒▓▒   ░▓██▓▓▓      ░  </tspan>
+<tspan x="16" y="250">           ░░██▓▓▓▒▒        ░░░░█░        </tspan>
+<tspan x="16" y="270">         ░░▒███▓██▓░  ▒▒       ░██        </tspan>
+<tspan x="16" y="290">        ░▓████▓▒▒▒▒░      ░     ██        </tspan>
+<tspan x="16" y="310">     ▒███████▓▒▒░   ▒▓▒  ░ ░▓▒░░▓███▒     </tspan>
+<tspan x="16" y="330">     ▒███▓▒▒█▓      ▒██▓▒ ░▒█▓░░░ ░█▒     </tspan>
+<tspan x="16" y="350">     ▓█▓█▒ ░██▓██▓▒▒▓███▓▒▒▒▒▒░    █░     </tspan>
+<tspan x="16" y="370">     █▒███▓██████▓▒▒▓█████▓▓▒░░ ░  █▒     </tspan>
+<tspan x="16" y="390">    ▓██▓█████▓▒▓▓▒░░▒▓████▓▓▓░░░▓▓▓█░     </tspan>
+<tspan x="16" y="410">   ░█▒░▒██████████▓░   ░░░ ░▒   ▒██▓      </tspan>
+<tspan x="16" y="430">   ░██▒░▓█████▓█████▓▒      ░   ▓█▓       </tspan>
+<tspan x="16" y="450">  ▒████░▒██████▓████▓▓▓██▓▒░▒  ▒██▒       </tspan>
+<tspan x="16" y="470">  ▓███░▒████████▓██▒▒▒▒▓█▓▓▒▓░ ████▒      </tspan>
+<tspan x="16" y="490">  ▒█▓▒░▓█████▓█████████████▓▓░░████▒█▒    </tspan>
+</text>
+<text fill="#c9d1d9" xml:space="preserve">
+<tspan x="455.8" y="30">sk1gl4a <tspan fill="#616e7f">────────────────────────────────────────────</tspan></tspan>
+<tspan x="455.8" y="50"><tspan fill="#ffa657">role</tspan> <tspan fill="#616e7f">........</tspan> <tspan fill="#a5d6ff">Informatik student</tspan></tspan>
+<tspan x="455.8" y="70"><tspan fill="#ffa657">uni</tspan> <tspan fill="#616e7f">.........</tspan> <tspan fill="#a5d6ff">Leibniz Universität Hannover</tspan></tspan>
+<tspan x="455.8" y="90"><tspan fill="#ffa657">location</tspan> <tspan fill="#616e7f">....</tspan> <tspan fill="#a5d6ff">Hannover, DE</tspan></tspan>
+<tspan x="455.8" y="110"><tspan fill="#ffa657">uptime</tspan> <tspan fill="#616e7f">......</tspan> <tspan fill="#a5d6ff">5 years, 9 months on GitHub</tspan></tspan>
+<tspan x="455.8" y="150"><tspan fill="#ffa657">stack</tspan> <tspan fill="#616e7f">.......</tspan> <tspan fill="#a5d6ff">C#, Java, C, Swift</tspan></tspan>
+<tspan x="455.8" y="170"><tspan fill="#ffa657">site</tspan> <tspan fill="#616e7f">........</tspan> <tspan fill="#a5d6ff">sk1gl4a.dev</tspan></tspan>
+</text></svg>
